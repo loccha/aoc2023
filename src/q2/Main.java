@@ -1,10 +1,8 @@
 package q2;
 
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.Arrays;
 import java.util.HashMap;
 
 public class Main {
@@ -18,7 +16,6 @@ public class Main {
         maxVal.put("red", 12);
         maxVal.put("green", 13);
         maxVal.put("blue", 14);
-
 
         //readfile
         BufferedReader br = new BufferedReader(new FileReader("src/q2/input.txt"));
@@ -40,7 +37,6 @@ public class Main {
 
             if(conditionNotRespected)  {continue;} //at least one condition is not respected
 
-            System.out.println(gameID + " " + Arrays.toString(gamesSet));
             total += gameID;
         }
 
